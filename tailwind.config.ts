@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'outfit': ['Outfit', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +56,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'soft-section': 'hsl(var(--soft-section))',
+				'safety-amber': {
+					DEFAULT: 'hsl(var(--safety-amber))',
+					foreground: 'hsl(var(--safety-amber-foreground))'
+				},
+				'trusted-coral': {
+					DEFAULT: 'hsl(var(--trusted-coral))',
+					foreground: 'hsl(var(--trusted-coral-foreground))'
+				},
+				danger: {
+					DEFAULT: 'hsl(var(--danger))',
+					foreground: 'hsl(var(--danger-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +79,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-safety': 'var(--gradient-safety)',
+				'gradient-warning': 'var(--gradient-warning)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'safety': 'var(--shadow-safety)',
+				'warning': 'var(--shadow-warning)',
+				'card': 'var(--shadow-card)',
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Midnight Mile Design System - Women's Safety App
+All colors are HSL format for consistent theming
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core App Colors */
+    --background: 0 0% 100%; /* White background */
+    --foreground: 216 70% 15%; /* Deep Navy (#0C1E3C) for text */
 
+    /* Card & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 216 70% 15%;
+    --soft-section: 39 50% 92%; /* Warm Beige (#F5EDE0) */
+
+    /* Interactive Elements */
+    --primary: 189 36% 39%; /* Muted Teal (#3D828B) */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 215 15% 35%; /* Slate Gray (#4A5568) */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Safety Colors */
+    --safety-amber: 44 100% 50%; /* Safety Amber (#FFB100) */
+    --safety-amber-foreground: 216 70% 15%;
+    
+    --trusted-coral: 7 65% 69%; /* Soft Coral (#E37B7B) */
+    --trusted-coral-foreground: 0 0% 100%;
+    
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+
+    /* UI States */
+    --muted: 39 50% 92%;
+    --muted-foreground: 215 15% 35%;
+
+    --accent: 189 36% 39%;
+    --accent-foreground: 0 0% 100%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 216 70% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 189 36% 39%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    /* Design tokens */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-safety: linear-gradient(135deg, hsl(189 36% 39%), hsl(189 36% 45%));
+    --gradient-warning: linear-gradient(135deg, hsl(44 100% 50%), hsl(44 100% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(216 70% 15%), hsl(215 15% 35%));
+    
+    /* Shadows */
+    --shadow-safety: 0 10px 30px -10px hsl(189 36% 39% / 0.3);
+    --shadow-warning: 0 4px 20px -8px hsl(44 100% 50% / 0.4);
+    --shadow-card: 0 4px 6px -1px hsl(220 13% 91% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
